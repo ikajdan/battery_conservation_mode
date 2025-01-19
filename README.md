@@ -1,19 +1,29 @@
-# Conservation Mode Extension
+# Battery Conservation Mode Extension
 
-A GNOME Shell extension that allows you to enable or disable the battery conservation mode on Lenovo laptops.
+A GNOME Shell extension that allows to control the battery conservation mode on Lenovo laptops.
+
+When the button is pressed, the extension toggles battery conservation mode on or off. Since this action requires elevated privileges, the user will be prompted to enter their password.
+
+An icon will be displayed in the top bar to indicate the current status of battery conservation mode.
+
+<br>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/951fb6ed-2fcd-4fba-8eaa-3e3cb8d58240" width="auto" height="auto"/>
+  <br><br>
+  <em>Button to control the battery conservation mode.</em>
+</div>
+<br>
+
+## Build
+
+```bash
+make build
+```
 
 ## Installation
 
 ```bash
-make build
 make install
-```
-
-## Development
-
-Run the following command to start the GNOME shell in a nested Wayland session:
-```bash
-make run
 ```
 
 ## License

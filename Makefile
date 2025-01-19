@@ -19,4 +19,5 @@ translations:
 	@./tools/update-locale.sh $(BUNDLE)
 
 run:
-	dbus-run-session -- gnome-shell --nested --wayland
+	@export MUTTER_DEBUG_DUMMY_MODE_SPECS=1280x800 \
+	&& dbus-run-session -- gnome-shell --nested --wayland
