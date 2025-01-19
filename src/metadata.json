@@ -1,8 +1,9 @@
 {
-  "name": "Conservation Mode",
-  "description": "Enable or disable conservation mode for your laptop battery",
-  "url": "https://github.com/ikajdan/conservation_mode",
-  "uuid": "conservation-mode@kajdan.pm",
+  "name": "Battery Conservation Mode",
+  "description": "Enable or disable conservation mode for Lenovo laptop battery",
+  "url": "https://github.com/ikajdan/battery_conservation_mode",
+  "uuid": "battery-conservation-mode@kajdan.pm",
+  "gettext-domain": "battery-conservation-mode@kajdan.pm",
   "version": 1,
   "version-name": "1.0.0",
   "shell-version": [

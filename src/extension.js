@@ -10,7 +10,7 @@ const ConservationModeToggle = GObject.registerClass(
     class ConservationModeToggle extends QuickToggle {
         constructor() {
             super({
-                title: _('Battery Conservation'),
+                title: _('Conservation Mode'),
                 iconName: 'emoji-nature-symbolic',
                 toggleMode: true,
             });
