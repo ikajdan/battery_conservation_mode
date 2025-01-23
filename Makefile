@@ -2,7 +2,7 @@ BUNDLE = "battery-conservation-mode@kajdan.pm"
 
 all: build install
 
-.PHONY: build install clean run
+.PHONY: build install uninstall clean translations run
 
 build:
 	@cd src \
@@ -11,6 +11,9 @@ build:
 
 install:
 	gnome-extensions install --force $(BUNDLE).zip
+
+uninstall:
+	gnome-extensions uninstall $(BUNDLE)
 
 clean:
 	@if [ -f $(BUNDLE).zip ]; then rm -v $(BUNDLE).zip; fi
